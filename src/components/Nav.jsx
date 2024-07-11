@@ -55,7 +55,7 @@ function NavBar() {
                                 open={Boolean(anchorEl)}
                                 onClose={handleClose}
                             >
-                                <MenuItem>About Me</MenuItem>
+                                <MenuItem onClick={() => { handleClose(); navigate('/about'); }}>About Me</MenuItem>
                                 <MenuItem onClick={() => { handleClose(); navigate('/portfolio'); }}>My Portfolio</MenuItem>
                                 <MenuItem onClick={() => { handleClose(); navigate('/resume'); }}>My Resume</MenuItem>
                                 <MenuItem onClick={() => { handleClose(); navigate('/contact'); }}>Contact Me</MenuItem>
@@ -63,7 +63,7 @@ function NavBar() {
                             </>
                             ) : (
                                 <>
-                                <Button>About Me</Button>
+                                <Button onClick={() => navigate('/about')}>About Me</Button>
                                 <Button onClick={() => navigate('/portfolio')}>My Portfolio</Button>
                                 <Button onClick={() => navigate('/resume')}>My Resume</Button>
                                 <Button onClick={() => navigate('/contact')}>Contact Me</Button>
