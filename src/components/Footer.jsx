@@ -19,11 +19,15 @@ function Footer() {
     <ThemeProvider theme={theme}>
      <Box component="footer" bgcolor="primary.main" py={2} sx={{ 
           position: 'fixed', 
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
           bottom: 0, 
           left: 0, 
           right: 0, 
           width: '100%', 
-          zIndex: 1000 
+          zIndex: 1000, 
+          height: '1rem'
       }}>
      <Container maxWidth="sm" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <Link aria-label="github" href="https://github.com/kaylommy">

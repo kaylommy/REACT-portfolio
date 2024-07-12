@@ -60,16 +60,16 @@ function NavBar() {
                             >
                                 <MenuItem onClick={() => { handleClose(); navigate('/'); }}>About Me</MenuItem>
                                <MenuItem onClick={() => { handleClose(); navigate('/portfolio'); }}>Portfolio</MenuItem>
-                                {/* <MenuItem onClick={() => { handleClose(); navigate('/resume'); }}>My Resume</MenuItem>
-                                <MenuItem onClick={() => { handleClose(); navigate('/contact'); }}>Contact Me</MenuItem> */}
+                                <MenuItem onClick={() => { handleClose(); navigate('/resume'); }}>My Resume</MenuItem>
+                                {/* <MenuItem onClick={() => { handleClose(); navigate('/contact'); }}>Contact Me</MenuItem> */}
                             </Menu>
                             </>
                             ) : (
                                 <>
                                 <Button onClick={() => navigate('/')} sx={{ color: isActive('/') ? 'grey' : 'white', padding: '1rem'}}>About Me</Button>
                                 <Button onClick={() => navigate('/portfolio')} sx={{ color: isActive('/portfolio') ? 'grey' : 'white', padding: '1rem'}}>Portfolio</Button>
-                                {/* <Button onClick={() => navigate('/resume')}>My Resume</Button>
-                                <Button onClick={() => navigate('/contact')}>Contact Me</Button> */}
+                                <Button onClick={() => navigate('/resume')} sx={{ color: isActive('/resume') ? 'grey' : 'white', padding: '1rem'}}>My Resume</Button>
+                                {/* <Button onClick={() => navigate('/contact')}>Contact Me</Button> */}
                                 </>
                             )}
             </Toolbar>

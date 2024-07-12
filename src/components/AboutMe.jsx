@@ -46,7 +46,7 @@ function AboutMe() {
                             I'm Kayla, a junior developer from Ontario, Canada but currently based in Charlotte, North Carolina.
                             <br />
                             <br />
-                            I am currently in a fullstack development bootcamp with EdX. Throughout this bootcamp I have become skillful in JavaScript and REACT. I am a very hardworker and put my best effort into everything I do.
+                            I am currently in a fullstack development bootcamp with EdX. Throughout this bootcamp I have become skillful in JavaScript and React. I am a very hardworker and put my best effort into everything I do.
                             <br />
                             <br />
                             <Link href="https://github.com/kaylommy" target="_blank" rel="noopener noreferrer">
