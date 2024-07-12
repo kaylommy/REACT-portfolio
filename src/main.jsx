@@ -4,10 +4,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from './App.jsx';
 import AboutPage from './pages/AboutPage.jsx';
-import HomePage from './pages/HomePage.jsx';
 // import ContactPage from './pages/ContactPage.jsx';
 // import HomePage from './pages/HomePage.jsx';
-// import PortfolioPage from './pages/PortfolioPage.jsx';
+import PortfolioPage from './pages/PortfolioPage.jsx';
 // import ResumePage from './pages/PortfolioPage.jsx';
 // import ErrorPage from './pages/ErrorPage.jsx';
 
@@ -20,20 +19,16 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <HomePage />
+                element: <AboutPage />
             },
             // {
             //     path: 'contact',
             //     element: <ContactPage />,
             // },
             {
-                path: 'about',
-                element: <AboutPage />,
+                path: 'portfolio',
+                element: <PortfolioPage />,
             },
-            // {
-            //     path: 'portfolio',
-            //     element: <PortfolioPage />,
-            // },
             // {
             //     path: 'resume',
             //     element: <ResumePage />

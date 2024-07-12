@@ -1,4 +1,4 @@
-import { Typography, Box, ThemeProvider, createTheme, Link } from "@mui/material";
+import { Typography, Box, ThemeProvider, createTheme, Link, useMediaQuery } from "@mui/material";
 import React from "react";
 import image from '../assets/images/react.portfolio.jpg';
 import GitHubIcon from '@mui/icons-material/GitHub'; 
@@ -13,7 +13,7 @@ const theme = createTheme({
 });
 
 function AboutMe() {
-    // const matches = useMediaQuery(theme.breakpoints.down('sm'));
+    const matches = useMediaQuery(theme.breakpoints.down('sm'));
     return (
         <>
             <ThemeProvider theme={theme}>
@@ -22,7 +22,8 @@ function AboutMe() {
                         display: 'flex',
                         height: '100vh',
                         justifyContent: 'center',
-                        alignItems: 'center'
+                        alignItems: 'center',
+                        flexDirection: matches ? 'column' : 'row'
                     }}
                 >
                     <Box
@@ -83,11 +84,12 @@ function AboutMe() {
                         <Box
                             component="img"
                             sx={{
-                                width: '350px',
+                                width: matches ? '250px' : '350px',
                                 height: '375px',
                                 objectFit: 'contain',
-                                border: '0.5rem solid #f8d3c5',
-                                boxShadow: 'inset 0 0 0 5rem #f8d3c5',
+                                border: matches ? 'none' : '0.5rem solid #f8d3c5',
+                                boxShadow: matches ? 'none' : 'inset 0 0 0 5rem #f8d3c5',
+                                marginBottom: matches ? 2 : 0,
                             }}
                             alt="Kayla Freeman"
                             src={image}

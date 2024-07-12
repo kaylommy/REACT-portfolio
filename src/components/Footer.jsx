@@ -17,7 +17,14 @@ function Footer() {
 
   return (
     <ThemeProvider theme={theme}>
-     <Box component="footer" bgcolor="primary.main" py={2}>
+     <Box component="footer" bgcolor="primary.main" py={2} sx={{ 
+          position: 'fixed', 
+          bottom: 0, 
+          left: 0, 
+          right: 0, 
+          width: '100%', 
+          zIndex: 1000 
+      }}>
      <Container maxWidth="sm" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <Link aria-label="github" href="https://github.com/kaylommy">
           <GitHubIcon sx={{ 
