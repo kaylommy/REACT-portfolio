@@ -33,15 +33,20 @@ const projects = [
     const [hovered, setHovered] = useState(null);
   
     return (
-      <>
-        <Typography variant='h4' gutterBottom>Portfolio</Typography>
+      <Box sx={{ 
+        backgroundColor: '#f8d3c5', 
+        borderRadius: '2rem', 
+        width: '75vw', 
+        mx: 'auto', 
+        display: 'block', }}>
+        <Typography variant='h4' sx={{ color: '#68736B', marginTop: '9rem', textAlign: 'center', paddingTop: '20px' }}>Portfolio</Typography>
         <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, justifyContent: 'center' }}>
           {projects.map((project) => (
             <Card
               key={project.id}
               onMouseEnter={() => setHovered(project.id)}
               onMouseLeave={() => setHovered(null)}
-              sx={{ marginTop: '9rem', marginBottom: '9rem', marginRight: '3rem', marginLeft: '3rem', position: 'relative', width: 345, height: 300 }}
+              sx={{ marginTop: '7rem', marginBottom: '9rem', marginRight: '3rem', marginLeft: '3rem', position: 'relative', width: 345, height: 300 }}
             >
               <CardMedia
                 component='img'
@@ -81,7 +86,7 @@ const projects = [
             </Card>
           ))}
         </Box>
-      </>
+      </Box>
     )
 }
 
