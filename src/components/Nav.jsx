@@ -69,7 +69,7 @@ function NavBar() {
                                 <Button onClick={() => navigate('/')} sx={{ color: isActive('/') ? 'grey' : 'white', padding: '1rem'}}>About Me</Button>
                                 <Button onClick={() => navigate('/portfolio')} sx={{ color: isActive('/portfolio') ? 'grey' : 'white', padding: '1rem'}}>Portfolio</Button>
                                 <Button onClick={() => navigate('/resume')} sx={{ color: isActive('/resume') ? 'grey' : 'white', padding: '1rem'}}>My Resume</Button>
-                                {/* <Button onClick={() => navigate('/contact')}>Contact Me</Button> */}
+                                <Button onClick={() => navigate('/contact')} sx={{ color: isActive('/contact') ? 'grey' : 'white', padding: '1rem'}}>Contact Me</Button>
                                 </>
                             )}
             </Toolbar>

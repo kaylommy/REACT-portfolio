@@ -38,7 +38,7 @@ function AboutMe() {
                             border: '1rem solid #fceee9',
                             boxShadow: 'inset 0 0 0 3px #f8d3c5',
                             padding: '1rem',
-                            marginRight: '5rem',
+                            marginRight: '5rem',  
 
                         }}
                     >
