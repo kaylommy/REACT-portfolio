@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Grid, Paper, Typography } from '@mui/material';
-import resumePdf from '../assets/resume/Kayla_Freeman.pdf'
 
 function Resume() {
     return (
@@ -18,10 +17,6 @@ function Resume() {
                     }}>
                         <Typography variant="h6" gutterBottom>
                             My Resume
-                        </Typography>
-                        <Typography>
-                            Download my resume <a href={resumePdf} download="Kayla_Freeman.pdf">here</a>
-                             
                         </Typography>
                     </Paper>
                 </Grid>
